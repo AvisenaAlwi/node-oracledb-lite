@@ -13,7 +13,7 @@ This repository contains a Docker image for Node.js based on the Alpine Linux di
 To use this Docker image, you can pull it from the Docker Hub repository:
 
 ```sh
-docker pull your-dockerhub-username/nodejs-alpine-oracleinstantclient
+docker pull avisenaalwi/node-oracledb-lite:$VERSION
 ```
 
 ### Running a Container
@@ -21,7 +21,7 @@ docker pull your-dockerhub-username/nodejs-alpine-oracleinstantclient
 To run a container using this image, use the following command:
 
 ```sh
-docker run -it --name my-node-app your-dockerhub-username/nodejs-alpine-oracleinstantclient
+docker run -it --name my-node-app avisenaalwi/node-oracledb-lite:$VERSION
 ```
 
 ### Example Dockerfile
@@ -29,7 +29,7 @@ docker run -it --name my-node-app your-dockerhub-username/nodejs-alpine-oraclein
 If you want to build your own image based on this one, you can use the following example Dockerfile:
 
 ```Dockerfile
-FROM your-dockerhub-username/nodejs-alpine-oracleinstantclient
+FROM avisenaalwi/node-oracledb-lite:latest
 
 # Set working directory
 WORKDIR /app
